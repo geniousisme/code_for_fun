@@ -2,6 +2,8 @@
 # coding:utf-8
 
 # Chris: Implement the length limited list on python with LongDu event scenario.
+# take some reference from this link: 
+# http://stackoverflow.com/questions/17526659/how-to-set-a-max-length-for-a-python-list-set 
 
 import uniout
 
