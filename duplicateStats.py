@@ -1,5 +1,9 @@
 import sys
-
+'''
+How to use this program?
+python duplicateStats.py file_name
+ex. python duplicateStats.py VJ0012.txt
+'''
 def duplicate_stats(file_name):
     input_file = open(file_name, 'r')
     lines      = input_file.readlines()
