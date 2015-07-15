@@ -16,12 +16,22 @@ class ToldYouDontRegisterTwiceBitchError(Exception):
 class LongDuAttendeeList(list):
       def __init__(self):
           self.attendee_bound = 11
+
+      def __repr__(self):
+          
       
       def _check_attendee_bound(self):
           if len(self) > self.attendee_bound:
              raise ToldYouRegisterEarlyBitchError()
 
       def register(self, person):
+          self._check_attendee_bound()
+          if person in self:
+             raise ToldYouDontRegisterTwiceBitchError()
+          else:
+             self.append(person)
+
+      def register(self, people):
           self._check_attendee_bound()
           if person in self:
              raise ToldYouDontRegisterTwiceBitchError()
