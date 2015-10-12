@@ -3,14 +3,12 @@
 ### Author: Chris Hsu
 
 #### 1. X * 2 ^ n
-ex.
 ```python
 a = b * 128 (2 ^ 7)
 a = b << 7
 ```
 
 #### 2. X / 2 ^ n
-ex.
 ```python
 a = b / 128 (2 ^ 7)
 a = b >> 7
@@ -88,6 +86,19 @@ def is_same_sign(a, b):
 
 def is_same_sign(a, b):
      return a ^ b >= 0
+```
+#include<stdio.h>
+
+#### 11. add two number without using the '+' operator?
+```python
+def add(x, y)
+    carry = sum = 1
+    while carry:
+        sum   = x ^ y;
+        carry = x & y;
+        x     = carry << 1;
+        y     = sum;
+    return sum
 ```
 
 ### reference:
