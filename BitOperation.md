@@ -46,7 +46,7 @@ def is_odd(num):
      return (num & 1) == 1
 ```
 
-##### 6. change positive integer to negative
+#### 6. change positive integer to negative
 ```python
 def negative(num):
      return num * -1
@@ -55,7 +55,7 @@ def negative(num):
      return ~num + 1 # so called "complement"
 ```
 
-##### 7. get remainder of power of two
+#### 7. get remainder of power of two
 ```python
 def remainder(num, pow):
      return num / (2 ** pow)
@@ -63,7 +63,7 @@ def remainder(num, pow):
 def remainder(num, pow):
      return num & ((2 ** pow) - 1)
 ```
-##### 8. is number power of two?
+#### 8. is number power of two?
 ```python
 def is_two_pow(num):
      return (-num & num) == num
@@ -72,7 +72,7 @@ def is_two_pow(num):
 # else not
 ```
 
-##### 9. incremental & decremental
+#### 9. incremental & decremental
 ```python
 def incremental(num):
      return -~num
@@ -81,16 +81,7 @@ def decremental(num):
      return ~-num
 ```
 
-##### 10. incremental & decremental
-```python
-def incremental(num):
-     return -~num
-
-def decremental(num):
-     return ~-num
-```
-
-##### 11. same sign or not?
+#### 10. same sign or not?
 ```python
 def is_same_sign(a, b):
      return a * b >= 0
