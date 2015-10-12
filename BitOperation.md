@@ -87,7 +87,6 @@ def is_same_sign(a, b):
 def is_same_sign(a, b):
      return a ^ b >= 0
 ```
-#include<stdio.h>
 
 #### 11. add two number without using the '+' operator?
 ```python
