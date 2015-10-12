@@ -26,7 +26,7 @@ class Solution:
              right = self.__select_nth((len(items)+1) // 2, items)
           return (left + right) * 0.5
       
-      def quirk_sort(self, nums):
+      def quirk_sortI(self, nums):
           length   = len(nums)
           if length < 2:
              return nums
@@ -52,6 +52,20 @@ class Solution:
                 odd_idx  += 2
                 i += 1
           return new_nums
+
+      def quirk_sort(self, nums):
+          for i in xrange(len(nums) - 1):
+            if i % 2 == 0:
+                if nums[i] > nums[i + 1]:
+                    self.swap(nums, i, i + 1)
+            else:
+                if nums[i] < nums[i + 1]:
+                    self.swap(nums, i, i + 1)
+          return nums
+
+      def swap(self, nums, idx1, idx2):
+          nums[idx1], nums[idx2] = nums[idx2], nums[idx1]
+
 
 if __name__ == "__main__":
    s = Solution()
